@@ -1,0 +1,174 @@
+body{
+background-color: black;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px 50px;
+}
+
+nav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+font-size: 30px;
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+
+p{
+font-size: 25px;
+}
+
+nav a:hover{
+color: blue;
+
+}
+
+.imagens{
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide{
+    width: 400%;
+    height: 400px;
+    display: flex;
+    
+}
+
+.slide input{
+    display: none;
+}
+
+.imagen{
+    width: 25%;
+    position: relative;
+}
+
+.imagen img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: blue;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+#radio6:checked ~ .first{
+    margin-left: -125%;
+}
+#radio7:checked ~ .first{
+    margin-left: -150%;
+}
+
+
+.navegar div{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.navegar{
+    position: absolute;
+    width: 800px;
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegar div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegar .auto-btn1{
+    background-color: blue;
+    
+}
+#radio2:checked ~ .navegar .auto-btn2{
+    background-color: blue;
+    
+}
+#radio3:checked ~ .navegar .auto-btn3{
+    background-color: blue;
+    
+}
+#radio4:checked ~ .navegar .auto-btn4{
+    background-color: blue;
+    
+}
+#radio5:checked ~ .navegar .auto-btn5{
+    background-color: blue;
+    
+}
+#radio6:checked ~ .navegar .auto-btn6{
+    background-color: blue;
+    
+}
+#radio7:checked ~ .navegar .auto-btn7{
+    background-color: blue;
+    
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+}
+
+footer img{
+    
+    width: 40px;
+    height: 40px;
+}
+footer p{
+    margin-top: 2px;
+}
+footer a{
+    margin-top: 20px;
+    text-align: center;
+}
